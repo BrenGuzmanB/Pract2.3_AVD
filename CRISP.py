@@ -292,4 +292,9 @@ plt.xlabel('False Positive Rate')
 plt.ylabel('True Positive Rate')
 plt.title('Multinomial Naive Bayes - Receiver Operating Characteristic (ROC) Curve')
 plt.legend()
-plt.show()
+plt.show
+
+#%%% Exportar modelo
+import joblib
+
+joblib.dump(rf_model, 'modelo.pkl')
